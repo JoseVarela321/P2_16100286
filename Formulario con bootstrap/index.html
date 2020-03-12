@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+ 
+</head>
+<body>
+ 
+    <div class="container "  >
+      <img src="img/logop.jpg" class="top-rigth rounded-circle img-fluid" style="width:15%">             
+       <h3 class="display-3 text-capitalize  text-center font-weight-lighter">Formulario de Pedido</h3>   
+             <br>
+                    
+             <form action="" class=" d-flex flex-md-row flex-*-fill d-flex justify-content-center ">          
+                <div class=" row " >
+                    <div class="col">                      
+                        <div class="form-group row  ">
+                            <label for="" class="col-2 col-form-label ">Nombre:</label>
+                            <input type="text"  placeholder="Escriba su Nombre..." class="form-control col-10">
+                        </div>
+                        <div class="form-group row ">
+                           <label for="" class="  hidden-sm-down  col-2 col-form-label">Apellidos:</label>
+                           <input type="text" placeholder="Escriba sus Apellidos..." class="form-control col-10">
+                       </div>
+                       <div class="form-group row ">
+                           <label for="email" class="  col-2 col-form-label">Correo:</label>
+                           <input type="email" placeholder="Escriba su Correo..." class="form-control col-10" required>
+                           <!--Para validar que el campo no este vacio-->
+                           <div class="valid-feedback">Valid.</div>
+                           <div class="invalid-feedback">No debe de quedar ningun campo vacio.</div>
+                       </div>
+                       <div class="form-group row ">
+                           <label for="" class="col-2 col-form-label">Numero de Telefono:</label>
+                           <input type="tel" placeholder="Escriba su Numero de Telefono..." class="form-control col-10">
+                       </div>
+                       <div class="form-group row  ">
+                           <label for="" class="col-2 col-form-label">Fecha de entrega</label>
+                           <input type="date" placeholder="Escriba la Fechade entrega" class="form-control col-10">
+                       </div>
+                       <!--Para poner los list-->
+                       <div class="form-group row  ">
+                        <label for="custom-select" class="col-2 col-form-label">Tipo de Evento:</label>
+                        <select class="form-control col-10" id="sel1">
+                          <option>XV años</option>
+                          <option>Infantil</option>
+                          <option>Boda</option>
+                          <option>Baby Shower</option>
+                          <option>Despedida de Solter@</option>
+                        </select>
+                      </div>
+                       <!--Para poner los radio buttoms-->
+                      <p >Seleccione un tipo de betun:</p>
+                       <div class="form-check-inline ">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Betun de Crema
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Betun de Mantequilla
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Betun de queso philadelphia
+                        </label>
+                      </div>
+                       
+                      <div class="form-group row ">
+                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Confirmar</button>
+                     </div>
+                     <!--PARA MOSTRAR MENSAJE FLOTANTE-->
+                    
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">NOTIFICACION!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ESTE BOTON AUN O HACE NADA!
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                 </form>
+                    </div>
+     </div>
+
+
+    <script  src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
